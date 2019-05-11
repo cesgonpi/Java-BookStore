@@ -101,7 +101,7 @@ public class BookDAO {
 		  statement.close();
 
     	} catch (SQLException e){
-    		
+    		e.printStackTrace();
     	}
     	
     }
