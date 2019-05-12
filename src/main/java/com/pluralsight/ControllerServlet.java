@@ -144,7 +144,7 @@ public class ControllerServlet extends HttpServlet {
 		int id = Integer.parseInt(request.getParameter("id"));
 		String title = request.getParameter("booktitle");
 		String author = request.getParameter("bookauthor");
-		Float price = Float.parseFloat(request.getParameter("price"));
+		Float price = Float.parseFloat(request.getParameter("bookprice"));
 		Book book = new Book(id, title, author, price);
 		bookDAO.updateBook(book);
 		response.sendRedirect("list");
