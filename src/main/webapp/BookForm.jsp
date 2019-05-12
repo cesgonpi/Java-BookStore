@@ -14,6 +14,9 @@
 	</ul>
 
 <div class="container">
+<c:if test="${ book != null }">
+	<form name="book_form" method="post" action="update" />
+</c:if>
     <form name="book_form" method="post" action="insert">
     <h2>
     <c:if test="${book != null}">
